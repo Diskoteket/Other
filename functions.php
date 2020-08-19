@@ -45,7 +45,7 @@ function display_attribute_after_single_product_title(){
   //Just some text displayed below the title
   $By = "By ";
 	
-  //if the value of $author is more than 0, do the following
+  //If the value of $author is more than 0, do the following
   if( sizeof($author) > 0 ){
 		
     //If the attribute $author contains ", " i.e more than one author, do the following
