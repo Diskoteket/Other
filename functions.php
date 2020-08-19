@@ -1,3 +1,4 @@
+<?php
 /*
  * Creates a function to display the custom attribute Author below the product title in single product view for WooCommerce, Wordpress.
  *
@@ -72,3 +73,4 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 add_action('woocommerce_single_product_summary','display_attribute_after_single_product_title', 10);
 
 add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 11 );
+?>
