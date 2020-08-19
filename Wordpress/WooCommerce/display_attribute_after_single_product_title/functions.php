@@ -37,7 +37,7 @@ function display_attribute_after_single_product_title(){
   //Merges the two arrays
   $author_merged = array_combine($author_name, $author_link_formatted);
 
-  //Loops throough the merged array and creates links.
+  //Loops through the merged array and creates links.
   foreach($author_merged as $link => $name) {
     $author_result[] = sprintf('<a href="https://example.com/product-tag/%s">%s</a>', $name, $link);
   }
@@ -55,7 +55,7 @@ function display_attribute_after_single_product_title(){
       $author_result_last = array_pop($author_result);
 			
       //Join the array with the string created earlier and display the arrays in the following fashion: $author_result[0], $author_result[1] and $author_result_last[0].
-      $By .= join(', ', $author_result) . " och $author_result_last";
+      $By .= join(', ', $author_result) . " and $author_result_last";
       echo $By;
     } 
     
