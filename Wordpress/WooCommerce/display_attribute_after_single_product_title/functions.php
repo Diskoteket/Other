@@ -29,9 +29,9 @@ function display_attribute_after_single_product_title(){
 
   //Loops through one of the arrays and replaces some characters so it corresponds with the product tags made separately.
   foreach ($author_link as $i => $item) {
-  $wrong_characters = array(' ','å','ä','ö');
-  $correct_characters = array('-','a','a','o');
-  $author_link_formatted = str_replace($wrong_characters, $correct_characters, $author_link);
+  	$wrong_characters = array(' ','å','ä','ö');
+  	$correct_characters = array('-','a','a','o');
+  	$author_link_formatted = str_replace($wrong_characters, $correct_characters, $author_link);
   }
   
   //Merges the two arrays
@@ -39,7 +39,7 @@ function display_attribute_after_single_product_title(){
 
   //Loops through the merged array and creates links.
   foreach($author_merged as $link => $name) {
-    $author_result[] = sprintf('<a href="https://example.com/product-tag/%s">%s</a>', $name, $link);
+  	$author_result[] = sprintf('<a href="https://example.com/product-tag/%s">%s</a>', $name, $link);
   }
   
   //Just some text displayed below the title
