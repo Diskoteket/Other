@@ -40,16 +40,63 @@
         app:srcCompat="@mipmap/heart_foreground" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_youtube"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@null"
-        android:text="Jag älskar dig"
+        android:text="Memes"
         app:backgroundTint="#D50000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView_heart" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_heart"
+        app:layout_constraintVertical_bias="0.276" />
 
+    <Button
+        android:id="@+id/button_spotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Spellista"
+        app:backgroundTint="#1ed760"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_youtube" />
+
+    <Button
+        android:id="@+id/button_jokes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Ordvits"
+        app:backgroundTint="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_spotify" />
+
+    <TextView
+        android:layout_width="289dp"
+        android:layout_height="86dp"
+        android:text="Med den här appen kan du få en random meme-compilation, du kan öppna en spellista jag gjort till dig och du kan få en random ordvits! Jag älskar dig! Puss!"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_heart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.225" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ILoveUs"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView_heart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
